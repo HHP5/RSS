@@ -96,7 +96,6 @@ class MainPagePresenter {
         cell.display(title: column.title)
         
         if column.imageURL != "" {
-            print(column.imageURL)
             let url = URL(string: column.imageURL)
             if let url = url{
                 do {

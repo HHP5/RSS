@@ -26,7 +26,6 @@ class MainPageTableViewController: UITableViewController, UINavigationBarDelegat
             cell = UITableViewCell(style: .default, reuseIdentifier: "MainPageReusableCell") as? MainPageTableViewCell
         }
         presenter.configure(cell: cell!, forRow: indexPath.row)
-//        presenter.willDisplay(cell: cell, forRowAt: indexPath)
         return cell!
     }
     

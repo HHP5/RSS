@@ -35,8 +35,7 @@ class NewsDetailsPresenterImplementation {
     }
 
     func viewDidLoad() {
-//        newsDetailViewController?.display(label: column!.title)
-//        print(news?.description)
+
         newsDetailViewController.display(title: news!.title)
         
         if news!.imageURL != "" {
