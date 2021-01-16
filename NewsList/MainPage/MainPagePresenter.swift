@@ -44,7 +44,6 @@ class MainPagePresenter {
         feedParser.parseFeed(url: urlString) { [self] (rssItem) in
             self.rssItem = rssItem
             if (index < numberOfNews){
-                print("LOADING MORE DATA")
                 newsMainPageTableViewController.tableView.tableFooterView = createSpinerFooter()
             }else{
                 newsMainPageTableViewController.tableView.tableFooterView = stopSpinerFooter()
@@ -63,7 +62,6 @@ class MainPagePresenter {
     func loadMoreData(){
         
         if (index < numberOfNews){
-            print("LOADING MORE DATA")
             newsMainPageTableViewController.tableView.tableFooterView = createSpinerFooter()
             if rssItemToCell.count < numberOfNews-1{
                 index = rssItemToCell.count
